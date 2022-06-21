@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2022-06-21T08:22:50.428Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="20.0.1" etag="asB0hC4XDR7PJHGjYkyL" type="github"><diagram id="TrYwWVhB_H0O4kULXbVY">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-21T08:27:25.008Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="0AdnyJO0V37KWjFek3Of" version="20.0.1" type="github">
+  <diagram id="TrYwWVhB_H0O4kULXbVY" name="Page-1">
+    <mxGraphModel dx="1280" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZnXoB-sPZclnGM4akWQf-1" value="主库&lt;br&gt;（作用：数据组写数据）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="110" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnXoB-sPZclnGM4akWQf-2" value="线上从库&lt;br&gt;（作用：后端同学访问数据组写入的结果数据；&lt;br&gt;权限：数据组同学不可直接访问）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="440" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnXoB-sPZclnGM4akWQf-3" value="数据组从库&lt;br&gt;（作用：数据组读数据，实现主写从读，减少主库压力）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="440" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZnXoB-sPZclnGM4akWQf-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZnXoB-sPZclnGM4akWQf-1" target="ZnXoB-sPZclnGM4akWQf-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="300" as="sourcePoint" />
+            <mxPoint x="400" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZnXoB-sPZclnGM4akWQf-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZnXoB-sPZclnGM4akWQf-1" target="ZnXoB-sPZclnGM4akWQf-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="270" as="sourcePoint" />
+            <mxPoint x="200" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
